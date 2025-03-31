@@ -66,3 +66,5 @@ const AIRPORTS = [
 
 type Vertex = (typeof AIRPORTS)[number]['identifer'] | (typeof AIRPORTS)[number]['identifer']
 type Edge = [Vertex, Vertex]
+
+// test commit
