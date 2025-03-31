@@ -35,7 +35,7 @@ const NAVAIDS = [
   {
     identifier: 'GCV',
   },
-]
+] as const
 
 const AIRPORTS = [
   {
@@ -64,5 +64,5 @@ const AIRPORTS = [
   },
 ] as const
 
-type vertex = (typeof AIRPORTS)[number]['identifer'] | (typeof AIRPORTS)[number]['identifer']
-type Edge = [vertex, vertex]
+type Vertex = (typeof AIRPORTS)[number]['identifer'] | (typeof AIRPORTS)[number]['identifer']
+type Edge = [Vertex, Vertex]
